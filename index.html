@@ -1,0 +1,24 @@
+<html>
+
+    <head ng-app="jobs" ng-strict-di>
+	   <script src="js/vendor/angular.js"></script> 
+	</head>
+	<body ng-cloak ng-controller="mainController">
+	
+	<md-content>
+	   <div>
+	    <md-card flex>
+	    <md-toolbar class="md-table-toolbar md-default" > 
+			<div class="md-toolbar-tools">
+				<span flex=70 class="md-title">Jobs for You</span>          
+			</div>
+		<md-divider></md-divider>
+		</md-toolbar>
+		<div ng-repeat="job in jobs>
+		 <md-button>{{job.title}}</md-button>
+		</div>
+		  </md-card>       		       		 		        		
+        </div>
+      </md-content>		
+      </body>
+</html>
