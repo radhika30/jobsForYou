@@ -3,17 +3,16 @@
 		Welcome
 		<span flex></span>
 	</md-toolbar>
-	<md-content layout="row" flex>
-	<div flex="50">
-		<md-content>
-			<md-subheader style="color:purple"><b>Jobs</b></md-subheader>
-			<md-card layout="row" layout-padding layout-align="start center" >
-				<div layout="column">
-					<p>Radhika</p>
-				</div>
-			</md-card>
-		</md-content>
-	</div>
-	
+	<md-content layout="column" flex>
+	     <div>Here are the listed jobs matching your profile</div>
+	      <div layout="column" layout-padding layout-align="start" ng-repeat = "record in jobs">
+				
+				
+				    <div><b>Company:</b> {{record.name}}</div>
+					<div><b>Job Title:</b> {{record.title}}</div>
+					<div><b>Description:</b> {{record.description}}</div>
+					
+			
+			</div>
 	</md-content>
 </md-content>
